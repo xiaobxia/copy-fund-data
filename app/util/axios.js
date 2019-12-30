@@ -1,8 +1,16 @@
 const axios = require('axios')
 const qs = require('qs')
 
+const env = process.env.NODE_ENV
+const isDev = env !== 'prod'
+
+let host = '47.98.140.76'
+if (isDev) {
+  host = '127.0.0.1'
+}
+
 function makeUrl (path) {
-  return `http://47.98.140.76:3020/fundServer/${path}`
+  return `http://${host}:3020/fundServer/${path}`
 }
 
 // 获取基金的买卖费率

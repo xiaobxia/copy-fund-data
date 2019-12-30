@@ -41,6 +41,11 @@ const schema = new Schema({
     type: Number,
     default: 0
   },
+  // 总盈亏
+  income: {
+    type: Number,
+    default: 0
+  },
   create_at: {
     type: Date,
     default: Date.now

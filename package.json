@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix .",
-    "dev": "cross-env NODE_ENV=dev nodemon --inspect --debug-port=9220 ./app.js",
+    "dev": "cross-env NODE_ENV=dev nodemon --inspect --debug-port=9221 ./app.js",
     "prod": "cross-env NODE_ENV=prod pm2 start ./app.js --name=copy-fund-data",
     "test": "echo \"Error: no test specified\" && exit 1",
     "delete": "pm2 delete copy-fund-data"
