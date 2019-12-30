@@ -56,3 +56,11 @@ exports.copyUserNetValue = async function () {
     })
   })
 }
+
+exports.exportUserFund = async function () {
+  return UserFundProxy.find({})
+}
+
+exports.copyUserNetValue = async function () {
+  return UserNetValueProxy.find({})
+}

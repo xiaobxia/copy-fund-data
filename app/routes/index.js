@@ -22,5 +22,7 @@ router.get('/', async function (ctx) {
 // 基金数据复制
 router.get('/fund/copyUserFund', controllers.fundController.copyUserFund)
 router.get('/fund/copyUserNetValue', controllers.fundController.copyUserNetValue)
+router.get('/fund/exportUserFund', controllers.fundController.exportUserFund)
+router.get('/fund/exportUserNetValue', controllers.fundController.exportUserNetValue)
 
 module.exports = router
