@@ -61,6 +61,6 @@ exports.exportUserFund = async function () {
   return UserFundProxy.find({})
 }
 
-exports.copyUserNetValue = async function () {
+exports.exportUserNetValue = async function () {
   return UserNetValueProxy.find({})
 }
